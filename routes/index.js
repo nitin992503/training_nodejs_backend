@@ -33,6 +33,7 @@ router.get('/train', function (req, res) {
 });
 
 router.post('/train', (req, res) => {
+  console.log(req.body);
   const { input1, input2, operation } = req.body;
   try {
     switch (operation) {
